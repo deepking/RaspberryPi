@@ -6,7 +6,7 @@ PREFIX_FOLDER=/opt/crosstool-ng-$VERSION
 FILENAME=crosstool-ng-$VERSION.tar.bz2 
 
 #requirements
-sudo apt-get install bison flex gperf texinfo libncurses5-dev
+sudo apt-get install build-essential bison flex gperf texinfo libncurses5-dev libtool automake autoconf
 
 if [ ! -f $FILENAME ]; then
     wget http://crosstool-ng.org/download/crosstool-ng/$FILENAME
